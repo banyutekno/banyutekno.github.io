@@ -3,9 +3,306 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Banyu Tekno</title>
+    <title>Banyu Tekno Solusindo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg?=1">
+
+    <style>
+        .nav-link.active {
+            color: #0d6efd !important; 
+        }
+        .hero-section {
+            background-image: url('./assets/bg.jpeg'); 
+            background-size: cover;
+            background-position: center;    
+            min-height: 80vh; 
+            overflow: hidden;
+            background-repeat: no-repeat;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8); 
+            z-index: 0;
+        }
+
+        .hero-section .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .image-wrapper {
+            position: relative;
+            display: inline-block;
+            width: 80%;
+        }
+
+        .whatsapp-float {
+            position: fixed;
+            width: 80px;
+            height: 80px;
+            bottom: 50px;
+            right: 30px;
+            background-color: #25d366;
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 50px;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            background-color: #1ebe57;
+        }
+
+
+    </style>
 </head>
-<body>
-    Hello world
-</body>
+    <body  
+        data-bs-spy="scroll" 
+        data-bs-target="#navbarNav" 
+        data-bs-offset="100" 
+        class="scrollspy-example" 
+        tabindex="0">
+        >
+        <nav class="navbar navbar-expand-lg bg-light fixed-top">
+            <div class="container">
+                <img src="./assets/small-logo.png" alt="" width="70rem">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#portofolio">Portofolio</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section class="hero-section position-relative text-white text-center d-flex align-items-center justify-content-center" id="home">
+            <div class="container position-relative z-1 py-5">
+                <h1 class="display-4 mb-2">PT Banyu Tekno Solusindo</h1>
+                <p class="mb-3">"Integrated Security Solutions for a Safer Future"</p>
+            </div>
+        </section>
+
+
+        <section id="about" class="py-5 bg-white">
+            <div class="container py-3">
+                <div class="row align-items-center py-5 flex-md-row-reverse">
+                    
+                    <div class="col-md-6 text-center order-1 order-md-2"
+                        data-aos="fade-right"
+                        data-aos-duration="800"
+                        data-aos-delay="200"
+                        data-aos-easing="ease-out-back">
+                    <div class="image-wrapper">
+                        <img src="./assets//logo.jpeg" alt="About Us Image" class="img-fluid rounded-3">
+                    </div>
+                    </div>
+
+                    <div class="col-md-6 py-5 order-2 order-md-1"
+                        data-aos="fade-left"
+                        data-aos-duration="1000"
+                        data-aos-delay="100"
+                        data-aos-easing="ease-in-out">
+                    <h2 class="mb-3">About Us</h2>
+                    <p>
+                        PT Banyu Tekno Solusindo is a company that provides security technology services and solutions, established in February 2023. We focus on the installation and integration of CCTV systems, access control, and security system consulting and designed to meet the needs of various sectors, including residential, commercial, industrial, and government institutions.
+                    </p>
+                    <p>
+                        With a commitment to excellent service and competitive pricing, PT Banyu Tekno Solusindo stands as a trusted partner in creating safer and more efficient environments through integrated technology.
+                    </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5" id="services">
+            <div class="container">
+                <div class="text-center mb-5">
+                <h2>Services</h2>
+                </div>
+
+                <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100 text-center shadow rounded-4 p-3 bg-white text-dark">
+                    <div class="mb-3">
+                        <img src="https://static.vecteezy.com/system/resources/previews/020/149/898/non_2x/cctv-security-camera-flat-icon-vector.jpg" width="48" alt="Mobile Dev Icon" />
+                    </div>
+                    <h5>CCTV Installation & Integration</h5>
+                        <p class="text-muted small">High-quality visual surveillance systems for security needs in various areas.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100 text-center shadow rounded-4 p-3 bg-white text-dark">
+                    <div class="mb-3">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828817.png" width="48" alt="Mobility Icon" />
+                    </div>
+                    <h5>Access Control Systems</h5>
+                        <p class="text-muted small">Door access management technology to enhance building and facility security.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100 text-center shadow rounded-4 p-3 bg-white text-dark">
+                    <div class="mb-3">
+                        <img src="https://cdn-icons-png.flaticon.com/512/4762/4762311.png" width="48" alt="Consulting Icon" />
+                    </div>
+                    <h5>Security System Consulting & Design</h5>
+                        <p class="text-muted small">Assistance from the start to design effective and efficient security solutions.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100 text-center shadow rounded-4 p-3 bg-white text-dark">
+                    <div class="mb-3">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1006/1006540.png" width="48" alt="Support Icon" />
+                    </div>
+                    <h5>Maintenance</h5>
+                        <p class="text-muted small">Comprehensive after-sales services to ensure systems are always in optimal condition.</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5">
+            <div class="container">
+                <div class="bg-primary rounded-4 p-4 p-md-5 shadow">
+                    <div class="text-center text-white mb-5">
+                        <h2>Advantages</h2>
+                    </div>
+
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col">
+                            <div class="card h-100 text-center border-0">
+                                <div class="card-body">
+                                <div class="mb-3 text-success fs-1">
+                                    <i class="bi bi-check2-circle"></i> 
+                                </div>
+                                <h5 class="card-title">Comprehensive Services</h5>
+                                <p class="card-text">A full approach from planning to maintenance.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100 text-center border-0">
+                                <div class="card-body">
+                                <div class="mb-3 text-warning fs-1">
+                                    <i class="bi bi-lightbulb-fill"></i>
+                                </div>
+                                <h5 class="card-title">Professional Team</h5>
+                                <p class="card-text">Handled by skilled and experienced professionals in the field.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100 text-center border-0">
+                                <div class="card-body">
+                                <div class="mb-3 text-primary fs-1">
+                                    <i class="bi bi-person-video3"></i>
+                                </div>
+                                <h5 class="card-title">Flexible Projects</h5>
+                                <p class="card-text">Capable of handling all project types, from small scale to large scale.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section class="py-5" id="portofolio">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2>Portofolio</h2>
+                </div>
+                <div class="row justify-content-center g-4">
+                
+                    <div class="col-md-6 col-lg-5">
+                        <div class="card shadow-sm h-100">
+                            <img class="card-img-top img-fluid" src="./assets/axis.webp" alt="Project 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Daiki AXIS Indonesia</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-5">
+                        <div class="card shadow-sm h-100">
+                            <img class="card-img-top img-fluid" src="./assets/kedutaan.jpg" alt="Project 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Embassy Of Japan Indonesia</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <a
+        class="whatsapp-float"
+        target="_blank"
+        aria-label="Chat on WhatsApp"
+        onclick="whatsAppClick()"
+        >
+            <i class="bi bi-whatsapp"></i>
+        </a>
+
+        <footer class="bg-light py-3">
+            <div class="container text-center">
+                <small class="text-muted">
+                &copy; 2025 PT Banyu Tekno Solusindo. All rights reserved.
+                </small>
+            </div>
+        </footer>
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        function whatsAppClick() {
+            const number = "628111126036";
+            const message = encodeURI("Hello! I'm interested in installing a CCTV or access control system. Can we discuss the options?")
+            const url = `https://wa.me/${number}?text=${message}`
+            window.open(url, '_blank')
+        }
+    </script>
 </html>
